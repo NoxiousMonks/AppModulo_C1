@@ -1,4 +1,4 @@
-package com.example.appmodulo_c1
+package com.example.appmodulo_c1.screens
 
 import com.example.appmodulo_c1.ui.theme.Background
 import com.example.appmodulo_c1.ui.theme.BookButtonColor
@@ -31,11 +31,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.appmodulo_c1.viewmodel.Hotel
 import com.example.appmodulo_c1.viewmodel.MainViewModel
 
 

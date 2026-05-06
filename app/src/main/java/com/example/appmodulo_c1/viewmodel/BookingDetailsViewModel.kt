@@ -2,7 +2,6 @@ package com.example.appmodulo_c1.viewmodel
 
 
 import androidx.lifecycle.ViewModel
-import com.example.appmodulo_c1.Hotel
 import com.example.appmodulo_c1.HotelRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

@@ -2,15 +2,15 @@ package com.example.appmodulo_c1.navigation
 
 
 import androidx.compose.runtime.Composable
-import androidx.lifecycle.ViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.example.appmodulo_c1.BookingDetailsScreen
-import com.example.appmodulo_c1.HomeScreen
-import com.example.appmodulo_c1.navigation.Screen
+import com.example.appmodulo_c1.screens.BookingConfirmScreen
+import com.example.appmodulo_c1.screens.BookingDetailsScreen
+import com.example.appmodulo_c1.screens.HomeScreen
+import com.example.appmodulo_c1.screens.MyBookingsScreen
 import com.example.appmodulo_c1.viewmodel.BookingDetailsViewModel
 import com.example.appmodulo_c1.viewmodel.MainViewModel
 

@@ -1,5 +1,10 @@
 package com.example.appmodulo_c1
 
+import com.example.appmodulo_c1.viewmodel.Hotel
+import com.example.appmodulo_c1.viewmodel.HotelRatings
+import com.example.appmodulo_c1.viewmodel.Review
+import com.example.appmodulo_c1.viewmodel.Room
+
 
 object HotelRepository {
 

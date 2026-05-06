@@ -1,4 +1,4 @@
-package com.example.appmodulo_c1
+package com.example.appmodulo_c1.viewmodel
 
 data class Hotel(
     val id: Int,

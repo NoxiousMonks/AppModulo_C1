@@ -2,6 +2,7 @@ package com.example.appmodulo_c1
 
 
 //import com.hotel.app.data.model.Booking
+import com.example.appmodulo_c1.viewmodel.Booking
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

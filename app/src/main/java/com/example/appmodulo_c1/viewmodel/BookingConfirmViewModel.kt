@@ -1,15 +1,8 @@
 package com.example.appmodulo_c1.viewmodel
 
-import android.os.Build
-import androidx.annotation.RequiresApi
 import androidx.lifecycle.ViewModel
-import com.example.appmodulo_c1.Booking
 import com.example.appmodulo_c1.BookingRepository
-import com.example.appmodulo_c1.Hotel
 import com.example.appmodulo_c1.HotelRepository
-import com.example.appmodulo_c1.PaymentMethod
-import com.example.appmodulo_c1.Room
-import com.example.appmodulo_c1.TravelPurpose
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

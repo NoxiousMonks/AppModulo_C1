@@ -1,4 +1,4 @@
-package com.example.appmodulo_c1
+package com.example.appmodulo_c1.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -20,6 +20,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.appmodulo_c1.viewmodel.Hotel
+import com.example.appmodulo_c1.viewmodel.HotelRatings
+import com.example.appmodulo_c1.viewmodel.Review
+import com.example.appmodulo_c1.viewmodel.Room
 import com.example.appmodulo_c1.ui.theme.Background
 import com.example.appmodulo_c1.ui.theme.DividerColor
 import com.example.appmodulo_c1.ui.theme.OnBackground
@@ -65,15 +69,17 @@ fun BookingDetailsScreen(
                     .fillMaxSize()
                     .padding(padding)
             ) {
-                HotelNameHeader(hotelName = h.name)
                 BookingTabRow(
                     selectedTab = selectedTab,
                     onTabSelected = viewModel::selectTab
                 )
+                HotelNameHeader(hotelName = h.name)
                 when (selectedTab) {
                     0 -> GuestReviewsTab(hotel = h)
                     1 -> RoomSelectionTab(hotel = h, onRoomSelected = onRoomSelected)
                 }
+
+
             }
         } ?: Box(
             modifier = Modifier
@@ -94,14 +100,16 @@ private fun BookingDetailsTopBar(onBack: () -> Unit) {
             Text(
                 text = "Booking",
                 fontWeight = FontWeight.SemiBold,
-                fontSize = 16.sp
+                fontSize = 16.sp,
+                color = Color.Black
             )
         },
         navigationIcon = {
             IconButton(onClick = onBack) {
                 Icon(
                     imageVector = Icons.Default.ArrowBack,
-                    contentDescription = "Back"
+                    contentDescription = "Back",
+                    tint = Color.Black
                 )
             }
         },
@@ -122,6 +130,7 @@ private fun HotelNameHeader(hotelName: String) {
             text = hotelName,
             fontWeight = FontWeight.Bold,
             fontSize = 22.sp,
+            lineHeight = 70.sp,
             color = OnBackground
         )
     }
@@ -352,7 +361,7 @@ private fun RoomListItem(room: Room, onClick: () -> Unit) {
                 .fillMaxWidth()
                 .padding(12.dp),
             horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.Top
+            verticalAlignment = Alignment.Bottom
         ) {
             Column(
                 modifier = Modifier.weight(1f),
